@@ -47,11 +47,6 @@ Document Upload → OCR Engine → PII Classifier → Redaction Engine → Outpu
 
 Primary hands-on ownership of the frontend/UI — site structure, login page, and dashboards, built with Next.js and Tailwind CSS. Beyond the frontend, I was involved across the project's full lifecycle (problem definition, system requirements, architecture discussions), and presented the complete system — OCR pipeline, PII classification, and redaction engine — at the FYP Exhibition demo.
 
-## Literature Grounding
-
-The team's approach draws on rule-based (regex), machine learning (SVM/decision trees), and deep learning (BERT, BiLSTM) methods for PII detection, informed by IEEE literature on PII detection, NER-based extraction, data anonymization, and hybrid obfuscated-PII detection.
-
-
 ## Future Work
 
 - Real-time redaction
