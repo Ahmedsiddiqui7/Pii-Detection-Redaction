@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PII Detection & Redaction in Digitized Documents — Frontend
 
-## Getting Started
+Frontend for a Final Year Project that automatically detects and redacts personally identifiable information (PII) — names, ID numbers, and other sensitive fields — from digitized documents.
 
-First, run the development server:
+Built by a 4-member team as part of our BSCS FYP at NED University of Engineering & Technology. Presented at NED's FYP Exhibition to visiting industry representatives.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## What the full system does
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Document → OCR text extraction → PII classification (NER + rule-based hybrid) → bounding-box coordinate extraction → redaction (black-box / blur / pattern masking) → redacted document + audit-log JSON report.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## My role
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Primary hands-on ownership of the frontend/UI — site structure, login page, and dashboards, built with Next.js and Tailwind CSS. Beyond the frontend, I was involved across the project's full lifecycle (problem definition, system requirements, architecture discussions), and presented the complete system — OCR pipeline, PII classification, and redaction engine — at the FYP Exhibition demo.
 
-## Learn More
+## Tech stack
 
-To learn more about Next.js, take a look at the following resources:
+Next.js · TypeScript · Tailwind CSS · shadcn/ui
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future work (identified in the project report)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Real-time redaction
+- Cloud deployment (AWS/GCP)
+- Multilingual support (Arabic/Urdu)
+- Blockchain-based immutable audit logging
