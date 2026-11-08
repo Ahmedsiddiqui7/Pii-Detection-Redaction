@@ -43,10 +43,6 @@ Document Upload → OCR Engine → PII Classifier → Redaction Engine → Outpu
 | Storage | AWS S3, JSON format |
 | Authentication | JWT Tokens |
 
-## My Role
-
-Primary hands-on ownership of the frontend/UI — site structure, login page, and dashboards, built with Next.js and Tailwind CSS. Beyond the frontend, I was involved across the project's full lifecycle (problem definition, system requirements, architecture discussions), and presented the complete system — OCR pipeline, PII classification, and redaction engine — at the FYP Exhibition demo.
-
 ## Future Work
 
 - Real-time redaction
